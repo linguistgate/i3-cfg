@@ -231,7 +231,7 @@ bindsym $mod+u border none
 
 # Settings for i3-gaps: git https://github.com/Airblader/i3
 
-for_window [class="^.*"] border pixel 5
+for_window [class="^.*"] border pixel 1
 gaps inner 10
 gaps outer 2
 smart_gaps on
@@ -286,8 +286,8 @@ bindsym $mod+shift+d exec j4-dmenu-desktop --dmenu="dmenu -fn 'InputSans:bold:pi
 ## ===== Personal settings, keybindings, and keyboard layouts ======= ##
 
 # Assign default workspace to specific apps
-assign [class="Firefox"]          $workspace4
-assign [class="VirtualBox"]       $workspace8
+assign [class="Firefox"]          $workspace2
+assign [class="VirtualBox"]       $workspace9
 assign [class="Skype"]            $workspace9
 assign [class="Spotify"]          $workspace10
 
