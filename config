@@ -218,6 +218,9 @@ mode "resize" {
         bindsym Escape mode "default"
 }
 
+# Enter resize mode
+bindsym $mod+r mode "resize"
+
 # Border control
 hide_edge_borders both
 bindsym $mod+shift+b exec i3-msg border toggle
