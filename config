@@ -8,10 +8,11 @@
 ## ------ Dependencies and notes ------ ##
 
 # This configuration is tailored to a Linux Mint background
-# installation with Mthe Mate DE assisting with certain convenient
-# functions. It uses the Airbender fork of i3, i3-gaps, and the installation protocols of Erik Dubois
+# installation with Mate Mate DE assisting with certain convenient
+# functions. It uses the Airbender fork of i3, i3-gaps, and the
+# installation protocols of Erik Dubois
 
-# mate-settings-daemon should be running for some tray functions.	     ddd
+# mate-settings-daemon should be running for some tray functions.
 
 # Fonts:
 #     Standard Mint: font pango:System San Francisco Display 12px
@@ -20,16 +21,16 @@
 
 ## ------ Global variables ----- ##
 
-set $workspace1  "1 "
-set $workspace2  "2 "
-set $workspace3  "3 "
-set $workspace4  "4 "
-set $workspace5  "5 "
-set $workspace6  "6 "
-set $workspace7  "7 "
-set $workspace8  "8 "
-set $workspace9  "9  "
-set $workspace10 "10 "
+set $workspace1  "1  "
+set $workspace2  "2 "
+set $workspace3  "3  "
+set $workspace4  "4  "
+set $workspace5  "5  "
+set $workspace6  "6  "
+set $workspace7  "7 "
+set $workspace8  "8  "
+set $workspace9  "9  "
+set $workspace10 "10 "
 
 set $firstMonitor eDP1
 set $secondMonitor VGA1
@@ -75,14 +76,15 @@ exec blueberry-tray
 exec insync start
 
 # Workspace-related applications
-exec firefox
+#exec firefox
+#exec qutebrowser
 #exec skype
-for_window [class="Firefox"] focus
-exec subl
+#for_window [class="Firefox"] focus
+#exec subl
 #exec evolution
-exec spotify
-for_window [class="Spotify"] focus
-exec caja --no-desktop
+#exec spotify
+#for_window [class="Spotify"] focus
+#exec caja --no-desktop
 exec ~/.config/i3/scripts/start-conkys.sh
 
 ## ----- Reloading and exiting i3 ------ ##
@@ -290,7 +292,7 @@ bindsym $mod+shift+d exec j4-dmenu-desktop --dmenu="dmenu -fn 'InputSans:bold:pi
 
 # Assign default workspace to specific apps
 assign [class="Firefox"]          $workspace2
-assign [class="VirtualBox"]       $workspace9
+assign [class="VirtualBox"]       $workspace8
 assign [class="Skype"]            $workspace9
 assign [class="Spotify"]          $workspace10
 
@@ -410,7 +412,7 @@ bindsym button8 move right
 ## ===== Appearance ====== ##
 
 # Main font
-font pango:System San Francisco Display Regular 8
+font pango:System San Francisco Display Regular 8, FontAwesome 8
 
 # Variety (desktop images) keybindings
 
