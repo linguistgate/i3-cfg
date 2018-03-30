@@ -316,13 +316,13 @@ bindsym $set+e exec setxkbmap us # English (US)
 bindsym $mod+e exec emacsclient -c -n
 
 # Start the Mate terminal
-bindsym $mod+Return exec mate-terminal; focus
+bindsym $mod+Return exec terminator; focus
 
 # Open file manager GUI (caja)
 bindsym $mod+Shift+Return exec caja --no-desktop
 
 # Open specific applications with control+alt+key sequence
-bindsym control+mod1+t exec mate-terminal; focus
+bindsym control+mod1+t exec terminator; focus
 bindsym control+mod1+m exec mate-system-monitor
 bindsym control+mod1+e exec emacsclient -c -n
 bindsym $mod+F1 exec emacsclient -c -n
