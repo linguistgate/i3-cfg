@@ -311,6 +311,9 @@ workspace $workspace10 output $firstMonitor
 # Change keyboard layout
 bindsym $set+d exec setxkbmap de # German
 bindsym $set+e exec setxkbmap us # English (US)
+bindsym $set+k exec setxkbmap kr # Korean
+
+
 
 # Start an emacsclient session in GUI, no-wait
 bindsym $mod+e exec emacsclient -c -n
