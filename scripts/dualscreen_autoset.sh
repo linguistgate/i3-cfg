@@ -6,7 +6,7 @@ if xrandr | grep -q 'eDP1 connected' && xrandr | grep -q 'VGA1 connected'
 then
     xrandr -s 0 --dpi 90
     #xrandr --dpi 80 --output VGA1 --rotate left --mode 1280x1024 --right-of eDP1
-    xrandr --dpi 80 --output VGA1 --rotate normal --mode 1280x1024 --left-of eDP1
+    xrandr --dpi 60 --output VGA1 --rotate normal --mode 1920x1080 --left-of eDP1
     #xrandr --dpi 100 --output VGA1 --mode 1920x1080 --left-of eDP1
 fi
 
