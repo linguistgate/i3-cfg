@@ -15,9 +15,10 @@
 # mate-settings-daemon should be running for some tray functions.
 
 # Fonts:
-#     Standard Mint: font pango:System San Francisco Display 12px
+#     Standard Mint: font pango:Overpass
 #     For workspace icons: fontawesome-webfont.ttf
-#     For dmenu: Input Sans
+#     For dmenu: Input Sans or Overpass
+#     Font specification: Seems to take only one size value in list with FontAwesome
 
 ## ------ Global variables ----- ##
 
@@ -236,8 +237,8 @@ bindsym $mod+u border none
 
 # Settings for i3-gaps: git https://github.com/Airblader/i3
 
-for_window [class="^.*"] border pixel 1
-gaps inner 10
+for_window [class="^.*"] border pixel 0
+gaps inner 8
 gaps outer 2
 smart_gaps on
 smart_borders on
@@ -283,10 +284,10 @@ mode "$mode_gaps_outer" {
 ## ===== Application launching ====== ##
 
 # Start dmenu
-bindsym $mod+d exec dmenu_run -i -p 'Apps or Cmd' -fn 'InputSans:bold:pixelsize=16' -nb '#494949' -nf '#a9a9a9' -sf '#dbdbdb' -sb '#222222' -l 10 -b
+bindsym $mod+d exec dmenu_run -i -p 'Apps or Cmd' -fn 'Overpass:thin:pixelsize=18' -nb '#494949' -nf '#a9a9a9' -sf '#dbdbdb' -sb '#222222' -l 10 -b
 
 # Start alternative menu j4-dmenu based on desktop files in /usr/share/applications
-bindsym $mod+shift+d exec j4-dmenu-desktop --dmenu="dmenu -fn 'InputSans:bold:pixelsize=16' -nb '#fdf6e3' -nf '#586c75' -sf '#fdf6e3' -sb '#FFAF00'"
+bindsym $mod+shift+d exec j4-dmenu-desktop --dmenu="dmenu -fn 'Overpass:thin:pixelsize=18' -nb '#fdf6e3' -nf '#586c75' -sf '#fdf6e3' -sb '#FFAF00'"
 
 ## ===== Personal settings, keybindings, and keyboard layouts ======= ##
 
@@ -415,7 +416,7 @@ bindsym button8 move right
 ## ===== Appearance ====== ##
 
 # Main font
-font pango:System San Francisco Display Regular 8, FontAwesome 8
+font pango:Overpass Light, FontAwesome 10
 
 # Variety (desktop images) keybindings
 
@@ -471,17 +472,29 @@ bar {
     # status_command  i3blocks -c ~/.config/i3/i3blocks.conf
     # status_command  ~/.config/i3/start-conky-i3statusbar.sh	
     workspace_buttons yes
-    
+    #font pango:FontAwesome 8
+
+    # colors {
+    #         background #2F2F2F
+    #         statusline #eeeeee
+    #         separator #666666
+    #         #                     border  backgr. text
+    #         focused_workspace     #a9a9a9 #222222 #a9a9a9
+    #         active_workspace      #a9a9a9 #222222 #a9a9a9
+    #         inactive_workspace    #a9a9a9 #5f676a #a9a9a9
+    #         urgent_workspace      #4A4A4A #4A4A4A #a9a9a9
+    #         }
+
     colors {
-            background #2F2F2F
-            statusline #eeeeee
-            separator #666666
-            #                     border  backgr. text
-            focused_workspace     #a9a9a9 #222222 #a9a9a9
-            active_workspace      #a9a9a9 #222222 #a9a9a9
-            inactive_workspace    #a9a9a9 #5f676a #a9a9a9
-            urgent_workspace      #4A4A4A #4A4A4A #a9a9a9
-            }
+        background #222222
+        statusline #eeeeee
+        separator #666666
+        #                  border  backgr. text
+        focused_workspace  #4c7899 #285577 #ffffff
+        active_workspace   #333333 #5f676a #ffffff
+        inactive_workspace #333333 #222222 #888888
+        urgent_workspace   #2f343a #900000 #ffffff
+        }
     }
 
 # Window decoration colors
@@ -489,12 +502,12 @@ bar {
 # DarkGrey background with white text - not focused grey background - black text
 
 # class                 border  backgr. text    indicator
-client.placeholder      #242424 #242424 #242424
-client.background       #242424 #242424 #242424
-client.focused          #4A4A4A #4A4A4A #e5e5e5 #4A4A4A
-client.unfocused        #222222 #222222 #aaaaaa #222222
-client.focused_inactive #222222 #222222 #a9a9a9 #222222
-client.urgent           #4A4A4A #4A4A4A #f7f7f7 #4A4A4A
+# client.placeholder      #242424 #242424 #242424
+# client.background       #242424 #242424 #242424
+# client.focused          #4A4A4A #4A4A4A #e5e5e5 #4A4A4A
+# client.unfocused        #222222 #222222 #aaaaaa #222222
+# client.focused_inactive #222222 #222222 #a9a9a9 #222222
+# client.urgent           #4A4A4A #4A4A4A #f7f7f7 #4A4A4A
 
 # Orange background with black text - not focus grey background - white text
 # Windows decoration colors
@@ -553,7 +566,6 @@ client.urgent           #4A4A4A #4A4A4A #f7f7f7 #4A4A4A
 # client.focused_inactive  #004050 #004050 #FFA000
 # client.unfocused         #004050 #004050 #cccccc 
 # client.urgent            #900000 #900000 #ffffff
-
 
 # Red background - black text
 # Windows decoration colors
