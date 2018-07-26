@@ -451,51 +451,55 @@ bindsym mod1+f exec variety -f
 # font pango:DroidSansMono 13
 # font pango:System San Francisco Display Regular 8
 
+## ------ Polybar ------ ##
+
+exec_always --no-startup-id $HOME/.config/polybar/launch.sh
+
 ## ------ Bar appearance ------- ##
 
 # Bar toggle, hide or show 
 bindsym $mod+b bar mode toggle
 
-bar {
+# bar {
 
-# Three different bar options:
-#    1. i3status
-#    2. i3blocks (from Airbender)
-#    3. conky
-#       For conky, font awesome should be installed script + font
-#       Documentation:
-#            https://i3wm.org/docs/user-contributed/conky-i3bar.html
+# # Three different bar options:
+# #    1. i3status
+# #    2. i3blocks (from Airbender)
+# #    3. conky
+# #       For conky, font awesome should be installed script + font
+# #       Documentation:
+# #            https://i3wm.org/docs/user-contributed/conky-i3bar.html
     
-    position          top	
-    height            25
-    status_command    i3status -c ~/.config/i3/i3status.conf
-    # status_command  i3blocks -c ~/.config/i3/i3blocks.conf
-    # status_command  ~/.config/i3/start-conky-i3statusbar.sh	
-    workspace_buttons yes
-    #font pango:FontAwesome 8
+#     position          top	
+#     height            25
+#     status_command    i3status -c ~/.config/i3/i3status.conf
+#     # status_command  i3blocks -c ~/.config/i3/i3blocks.conf
+#     # status_command  ~/.config/i3/start-conky-i3statusbar.sh	
+#     workspace_buttons yes
+#     #font pango:FontAwesome 8
 
-    # colors {
-    #         background #2F2F2F
-    #         statusline #eeeeee
-    #         separator #666666
-    #         #                     border  backgr. text
-    #         focused_workspace     #a9a9a9 #222222 #a9a9a9
-    #         active_workspace      #a9a9a9 #222222 #a9a9a9
-    #         inactive_workspace    #a9a9a9 #5f676a #a9a9a9
-    #         urgent_workspace      #4A4A4A #4A4A4A #a9a9a9
-    #         }
+#     # colors {
+#     #         background #2F2F2F
+#     #         statusline #eeeeee
+#     #         separator #666666
+#     #         #                     border  backgr. text
+#     #         focused_workspace     #a9a9a9 #222222 #a9a9a9
+#     #         active_workspace      #a9a9a9 #222222 #a9a9a9
+#     #         inactive_workspace    #a9a9a9 #5f676a #a9a9a9
+#     #         urgent_workspace      #4A4A4A #4A4A4A #a9a9a9
+#     #         }
 
-    colors {
-        background #222222
-        statusline #eeeeee
-        separator #666666
-        #                  border  backgr. text
-        focused_workspace  #4c7899 #285577 #ffffff
-        active_workspace   #333333 #5f676a #ffffff
-        inactive_workspace #333333 #222222 #888888
-        urgent_workspace   #2f343a #900000 #ffffff
-        }
-    }
+#     colors {
+#         background #222222
+#         statusline #eeeeee
+#         separator #666666
+#         #                  border  backgr. text
+#         focused_workspace  #4c7899 #285577 #ffffff
+#         active_workspace   #333333 #5f676a #ffffff
+#         inactive_workspace #333333 #222222 #888888
+#         urgent_workspace   #2f343a #900000 #ffffff
+#         }
+#     }
 
 # Window decoration colors
 
