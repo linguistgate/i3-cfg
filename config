@@ -8,9 +8,9 @@
 ## ------ Dependencies and notes ------ ##
 
 # This configuration is tailored to a Linux Mint background
-# installation with Mate Mate DE assisting with certain convenient
+# installation with Mate DE assisting with certain convenient
 # functions. It uses the Airbender fork of i3, i3-gaps, and the
-# installation protocols of Erik Dubois
+# installation protocols of Erik Dubois.
 
 # mate-settings-daemon should be running for some tray functions.
 
@@ -21,6 +21,8 @@
 #     Font specification: Seems to take only one size value in list with FontAwesome
 
 ## ------ Global variables ----- ##
+
+# Icons assume i3bar is working. Polybar is often used instead with its own icon set.
 
 set $workspace1  "1  "
 set $workspace2  "2 "
@@ -62,18 +64,20 @@ new_window pixel
 
 # Daemons and background
 exec mate-settings-daemon
+exec --no-startup-id mate-power-manager
 exec emacs --daemon
 #exec nitrogen --restore
 exec_always --no-startup-id numlockx on
+#exec sudo tlp start
 
 # Start tray applications
 exec --no-startup-id nm-applet
 exec dropbox start
-exec variety
+exec variety -v
 exec mintupdate-launcher
 #exec volti
 exec pasystray
-exec blueberry-tray
+exec blueman-applet
 exec insync start
 
 # Workspace-related applications
@@ -386,6 +390,7 @@ bindsym $mod+o scratchpad show
 # exec --no-startup-id /usr/libexec/cinnamon/gnome-fallback-media-keys-helper
 
 # T440p screen brightness
+# xbacklight must be installed; works with T440p hardware
 bindsym XF86MonBrightnessUp exec xbacklight -inc 20 # increase
 bindsym XF86MonBrightnessDown exec xbacklight -dec 20 # decrease
 
