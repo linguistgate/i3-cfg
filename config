@@ -63,6 +63,7 @@ exec_always compton --config ~/.config/i3/compton.conf
 new_window pixel
 
 # Daemons and background
+exec syncthing
 exec mate-settings-daemon
 exec --no-startup-id mate-power-manager
 exec emacs --daemon
