@@ -80,6 +80,14 @@ exec pasystray
 exec blueman-applet
 exec insync start
 
+# Dropbox 2019 workaround
+# I have an encrypted ext4 paritition using LUKS; however, Dropbox still claims fileystem not supported
+# Script from https://github.com/dark/dropbox-filesystem-fix.
+# It is an experimental fix and could cause data loss. It is a temporary solution.
+# The script is stored under /opt.
+
+exec /opt/dropbox-filesystem-fix/dropbox_start.py
+
 # Workspace-related applications
 #exec firefox
 #exec qutebrowser
