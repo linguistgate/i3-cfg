@@ -26,14 +26,14 @@
 
 set $workspace1  "1  Org"
 set $workspace2  "2  Web"
-set $workspace3  "3  Term"
-set $workspace4  "4  Code"
+set $workspace3  "3  Sandbox"
+set $workspace4  "4  Sandbox"
 set $workspace5  "5  Media"
 set $workspace6  "6  Org"
 set $workspace7  "7  Web"
 set $workspace8  "8  Term"
-set $workspace9  "9  Code"
-set $workspace10 "10  Media"
+set $workspace9  "9  Sandbox"
+set $workspace10 "10  Sandbox"
 
 set $firstMonitor eDP1
 set $secondMonitor VGA1
