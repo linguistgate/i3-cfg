@@ -24,16 +24,16 @@
 
 # Icons assume i3bar is working. Polybar is often used instead with its own icon set.
 
-set $workspace1  "1  "
-set $workspace2  "2 "
-set $workspace3  "3  "
-set $workspace4  "4  "
-set $workspace5  "5  "
-set $workspace6  "6  "
-set $workspace7  "7 "
-set $workspace8  "8  "
-set $workspace9  "9  "
-set $workspace10 "10 "
+set $workspace1  "1  Org"
+set $workspace2  "2  Web"
+set $workspace3  "3  Term"
+set $workspace4  "4  Code"
+set $workspace5  "5  Media"
+set $workspace6  "6  Org"
+set $workspace7  "7  Web"
+set $workspace8  "8  Term"
+set $workspace9  "9  Code"
+set $workspace10 "10  Media"
 
 set $firstMonitor eDP1
 set $secondMonitor VGA1
