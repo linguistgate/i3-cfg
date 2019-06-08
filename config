@@ -33,7 +33,7 @@ set $workspace6  "6  Org"
 set $workspace7  "7  Web"
 set $workspace8  "8  Term"
 set $workspace9  "9  Sandbox"
-set $workspace10 "10  Sandbox"
+set $workspace10 "10  Server"
 
 set $firstMonitor eDP1
 set $secondMonitor VGA1
