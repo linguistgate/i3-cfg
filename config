@@ -351,6 +351,8 @@ bindsym control+mod1+c exec caja --no-desktop
 # Screenshots
 bindsym Print exec scrot -e ~/Pictures/capt-$(date '+%Y-%m-%d-%H%M%S_screenshot').png
 
+for_window [instance="emacs-popup"] floating enable
+
 ## ====== Appplication-specific behavior ====== ##
 
 # Popups during fullscreen mode
