@@ -26,7 +26,7 @@
 
 set $workspace1  "1  Org"
 set $workspace2  "2  Web"
-set $workspace3  "3  Email"
+set $workspace3  "3  Sandbox"
 set $workspace4  "4  Sandbox"
 set $workspace5  "5  Media"
 set $workspace6  "6  Sandbox"
