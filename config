@@ -475,14 +475,10 @@ bindsym button8 move right
 ## ===== Appearance ====== ##
 
 # Main font
-<<<<<<< HEAD
 font pango:Overpass, FontAwesome 10, Weather Icons 10
 
 # Print all window titles bold
 for_window [class=".*"] title_format "<b>%title</b>"
-=======
-font pango:Overpass Light, FontAwesome 10
->>>>>>> 3ec83ae95e5efbdcdfbce079361d848b82c16ed2
 
 # Variety (desktop images) keybindings
 
