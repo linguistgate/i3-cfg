@@ -24,7 +24,6 @@
 
 # Icons assume i3bar is working. Polybar is often used instead with its own icon set.
 
-<<<<<<< HEAD
 set $workspace1  "1 "
 set $workspace2  "2 "
 set $workspace3  "3 "
@@ -35,24 +34,6 @@ set $workspace7  "7 "
 set $workspace8  "8 "
 set $workspace9  "9 "
 set $workspace10 "10 "
-
-set $firstMonitor eDP-1
-set $secondMonitor VGA-1
-=======
-set $workspace1  "1  Org"
-set $workspace2  "2  Web"
-set $workspace3  "3  Sandbox"
-set $workspace4  "4  Sandbox"
-set $workspace5  "5  Media"
-set $workspace6  "6  Sandbox"
-set $workspace7  "7  Web"
-set $workspace8  "8  Term"
-set $workspace9  "9  Magit"
-set $workspace10 "10  Server"
-
-set $firstMonitor eDP1
-set $secondMonitor VGA1
->>>>>>> 3ec83ae95e5efbdcdfbce079361d848b82c16ed2
 
 ## ------ Key definitions ------ ##
 
@@ -82,10 +63,8 @@ new_window pixel
 exec mate-settings-daemon
 exec --no-startup-id mate-power-manager
 exec emacs --daemon
-<<<<<<< HEAD
-=======
+
 #exec nitrogen --restore
->>>>>>> 3ec83ae95e5efbdcdfbce079361d848b82c16ed2
 exec_always --no-startup-id numlockx on
 #exec sudo tlp start
 
@@ -94,14 +73,11 @@ exec --no-startup-id nm-applet
 exec dropbox start
 exec variety -v
 exec mintupdate-launcher
-<<<<<<< HEAD
 exec pasystray
 exec blueberry-tray
-=======
 #exec volti
 exec pasystray
 exec blueman-applet
->>>>>>> 3ec83ae95e5efbdcdfbce079361d848b82c16ed2
 exec insync start
 
 # Dropbox 2019 workaround
@@ -110,11 +86,7 @@ exec insync start
 # It is an experimental fix and could cause data loss. It is a temporary solution.
 # The script is stored under /opt.
 
-<<<<<<< HEAD
 #exec /opt/dropbox-filesystem-fix/dropbox_start.py
-=======
-exec /opt/dropbox-filesystem-fix/dropbox_start.py
->>>>>>> 3ec83ae95e5efbdcdfbce079361d848b82c16ed2
 
 # Workspace-related applications
 #exec firefox
@@ -126,11 +98,7 @@ exec /opt/dropbox-filesystem-fix/dropbox_start.py
 #exec spotify
 #for_window [class="Spotify"] focus
 #exec caja --no-desktop
-<<<<<<< HEAD
 #exec ~/.config/i3/scripts/start-conkys.sh
-=======
-exec ~/.config/i3/scripts/start-conkys.sh
->>>>>>> 3ec83ae95e5efbdcdfbce079361d848b82c16ed2
 
 ## ----- Reloading and exiting i3 ------ ##
 
@@ -337,14 +305,8 @@ bindsym $mod+shift+d exec j4-dmenu-desktop --dmenu="dmenu -fn 'Overpass:thin:pix
 
 # Assign default workspace to specific apps
 assign [class="Firefox"]          $workspace2
-<<<<<<< HEAD
 assign [class="Spotify"]          $workspace5
 assign [class="Skype"]            $workspace9
-=======
-assign [class="VirtualBox"]       $workspace8
-assign [class="Skype"]            $workspace9
-assign [class="Spotify"]          $workspace10
->>>>>>> 3ec83ae95e5efbdcdfbce079361d848b82c16ed2
 
 # Dual monitor workspace assignments
 workspace $workspace1 output $secondMonitor
@@ -363,20 +325,11 @@ bindsym $set+d exec setxkbmap de # German
 bindsym $set+e exec setxkbmap us # English (US)
 bindsym $set+k exec setxkbmap kr # Korean
 
-<<<<<<< HEAD
-=======
-
-
->>>>>>> 3ec83ae95e5efbdcdfbce079361d848b82c16ed2
 # Start an emacsclient session in GUI, no-wait
 bindsym $mod+e exec emacsclient -c -n
 
 # Start the Mate terminal
-<<<<<<< HEAD
 bindsym $mod+Return exec mate-terminal; focus
-=======
-bindsym $mod+Return exec terminator; focus
->>>>>>> 3ec83ae95e5efbdcdfbce079361d848b82c16ed2
 
 # Open file manager GUI (caja)
 bindsym $mod+Shift+Return exec caja --no-desktop
@@ -511,13 +464,7 @@ bindsym mod1+f exec variety -f
 # font pango:Sans 13 
 # font pango:Noto Mono Regular 13
 # font pango:DroidSansMono 13
-<<<<<<< HEAD
 # font pango:System San Francisco Display Regular 12
-
-
-=======
-# font pango:System San Francisco Display Regular 8
->>>>>>> 3ec83ae95e5efbdcdfbce079361d848b82c16ed2
 
 ## ------ Polybar ------ ##
 
