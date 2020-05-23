@@ -35,6 +35,9 @@ set $workspace8  "8 "
 set $workspace9  "9 "
 set $workspace10 "10 "
 
+set $firstMonitor eDP-1
+set $secondMonitor VGA-1
+
 ## ------ Key definitions ------ ##
 
 # $Mod = WINDOWS key or Super key or Mod4
