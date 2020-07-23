@@ -476,6 +476,9 @@ bindsym mod1+f exec variety -f
 
 ## ------ Polybar ------ ##
 
+# [2020-07-23] With upgrade to Linux Mint 20x, not working (snap version polybar-git also not working well)
+# [2020-07-23] With installation of PPA from unstable and some ill-explained resolutions of conflicts (seemed to have to try to build from source first, have that fail, and then reinstall from PPA), polybar now "works"
+
 exec_always --no-startup-id $HOME/.config/polybar/launch.sh
 
 ## ------ Bar appearance ------- ##
@@ -496,8 +499,8 @@ bindsym $mod+b bar mode toggle
 #     position          top	
 #     height            25
 #     status_command    i3status -c ~/.config/i3/i3status.conf
-#     # status_command  i3blocks -c ~/.config/i3/i3blocks.conf
-#     # status_command  ~/.config/i3/start-conky-i3statusbar.sh	
+#     #status_command  i3blocks -c ~/.config/i3/i3blocks.conf
+#     #status_command  ~/.config/i3/start-conky-i3statusbar.sh	
 #     workspace_buttons yes
 #     #font pango:FontAwesome 8
 
