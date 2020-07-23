@@ -334,7 +334,7 @@ bindsym $set+k exec setxkbmap kr # Korean
 
 # Update on [2020-07-05] Using snap version of Emacs requires emacs.emacsclient command.
 
-bindsym $mod+e exec emacs.emacsclient -c -n
+bindsym $mod+e exec emacsclient -c -n
 
 # Start the Mate terminal
 bindsym $mod+Return exec mate-terminal; focus
@@ -345,8 +345,8 @@ bindsym $mod+Shift+Return exec caja --no-desktop
 # Open specific applications with control+alt+key sequence
 bindsym control+mod1+t exec terminator; focus
 bindsym control+mod1+m exec mate-system-monitor
-bindsym control+mod1+e exec emacs.emacsclient -c -n
-bindsym $mod+F1 exec emacs.emacsclient -c -n
+bindsym control+mod1+e exec emacsclient -c -n
+bindsym $mod+F1 exec emacsclient -c -n
 bindsym control+mod1+f exec firefox; workspace 2; focus
 bindsym $mod+F2 exec firefox;workspace 2; focus
 bindsym control+mod1+s exec spotify
