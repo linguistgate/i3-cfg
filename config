@@ -297,10 +297,14 @@ mode "$mode_gaps_outer" {
 ## ===== Application launching ====== ##
 
 # Start dmenu
-bindsym $mod+d exec dmenu_run -i -p 'Apps or Cmd' -fn 'Overpass:thin:pixelsize=18' -nb '#494949' -nf '#a9a9a9' -sf '#dbdbdb' -sb '#222222' -l 10 -b
+#bindsym $mod+d exec dmenu_run -i -p 'Apps or Cmd' -fn 'Overpass:thin:pixelsize=18' -nb '#494949' -nf '#a9a9a9' -sf '#dbdbdb' -sb '#222222' -l 10 -b
+
+# Start rofi
+bindsym $mod+d exec rofi -combi-modi window#drun#ssh -theme solarized -font "hack 10" -show combi
 
 # Start alternative menu j4-dmenu based on desktop files in /usr/share/applications
 bindsym $mod+shift+d exec j4-dmenu-desktop --dmenu="dmenu -fn 'Overpass:thin:pixelsize=18' -nb '#fdf6e3' -nf '#586c75' -sf '#fdf6e3' -sb '#FFAF00'"
+
 
 ## ===== Personal settings, keybindings, and keyboard layouts ======= ##
 
