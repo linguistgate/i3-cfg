@@ -77,8 +77,7 @@ exec dropbox start
 exec variety -v
 exec mintupdate-launcher
 exec blueberry-tray
-exec volti
-exec pasystray
+exec --no-starup-id pasystray --always-notify
 exec blueman-applet
 exec insync start
 
